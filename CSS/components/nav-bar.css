@@ -1,0 +1,30 @@
+.nav {
+    background-color: var(--basicColor);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid var(--secondColor);
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    position: relative;
+    color: var(--pointColor);
+}
+
+.nav__notification{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.nav__btn div {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/alt-screen-header.css";
+@import "components/user-component.css";
+@import "components/badge&news.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+body {
+    color: #2e363e;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header__title {
+    color: var(--pointColor);
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.welcome-header__text {
+    width: 60%;
+    color: #3821079a;
+    line-height: 150%;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+  
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    border-bottom: 1px solid var(--basicColor);
+    margin-bottom: 25px;
+}
+
+#login-form input::placeholder {
+    color: #3821077a;
+}
+
+#login-form input:focus {
+    border-color: var(--secondColor);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input[type="submit"] {
+    color: var(--pointColor);
+    background-color: var(--basicColor);
+    cursor: pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+    border: none;
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: var(--secondColor);
+    transition: background-color 0.3s ease-in-out;
+}
+  
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--pointColor);
+    font-size: 15px;
+}
+
+.main-screen {
+    position: relative;
+    top: var(--horizontal-space);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0px var(--horizontal-space);
+}

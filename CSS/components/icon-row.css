@@ -1,0 +1,24 @@
+.icon-row {
+    color: var(--pointColor);
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-row__icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.icon-row__icon i {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.icon-row__notification {
+    position: absolute;
+    left: 50px;
+    bottom: 70px;
+}
